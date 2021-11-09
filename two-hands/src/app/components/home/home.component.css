@@ -1,0 +1,18 @@
+.home-container{
+    font-size: 2em;
+    font-family: "isocpeur", sans-serif;
+    text-align: center;
+}
+
+p{
+    margin: 1em;
+}
+
+img{
+    max-width: 300px;
+}
+
+h3{
+    font-family: "isocpeur", sans-serif;
+    font-size: 2em;
+}

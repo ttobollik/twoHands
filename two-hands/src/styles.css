@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "isocpeur";
+    src: url("/assets/fonts/ISOCPEUR.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+body {
+    font-family: "isocpeur", sans-serif;
+    font-size: 2em;
+    color: white;
+    background-image: url("assets/textures/background-texture.png");
+    background-repeat: round space;
+    background-color: rgb(41, 41, 41);
+    margin: 0 auto;
+}
+
