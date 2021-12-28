@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: "isocpeur";
     src: url("/assets/fonts/ISOCPEUR.ttf") format("truetype");
@@ -11,8 +13,9 @@ body {
     font-size: 2em;
     color: white;
     background-image: url("assets/textures/background-texture.png");
-    background-repeat: round space;
+    background-repeat: round;
     background-color: rgb(41, 41, 41);
     margin: 0 auto;
+    text-align: center;
 }
 

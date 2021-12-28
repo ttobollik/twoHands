@@ -1,11 +1,11 @@
 .home-container{
     font-size: 2em;
     font-family: "isocpeur", sans-serif;
-    text-align: center;
+    padding-top: 50px;
 }
 
 p{
-    margin: 1em;
+    margin: 2em;
 }
 
 img{
@@ -14,5 +14,6 @@ img{
 
 h3{
     font-family: "isocpeur", sans-serif;
-    font-size: 2em;
+    margin: 1em;
+    font-size: 3em;
 }
