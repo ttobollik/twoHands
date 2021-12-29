@@ -33,9 +33,7 @@ export class HeaderComponent implements OnInit {
   }
   
   getActivePageClass( page : string): string {
-    const test =  page === this.currentPage ? 'nav-item active' : 'nav-item'; 
-    console.log(test)
-    return test;
+    return page === this.currentPage ? 'nav-item active' : 'nav-item'; 
   }
 
 
