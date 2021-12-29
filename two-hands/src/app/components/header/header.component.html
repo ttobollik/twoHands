@@ -15,15 +15,18 @@
   <links>
 
     <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link waves-light" (click)="scrollToAnchor('home')" mdbWavesEffect>Home<span class="sr-only"></span></a>
+    <ul class="navbar-nav me-auto">
+      <li [ngClass]="getActivePageClass('home')">
+        <a class="nav-link waves-light" (click)="scrollToAnchor('home')" mdbWavesEffect>Home
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" (click)="scrollToAnchor('work')" mdbWavesEffect>Work</a>
+      <li [ngClass]="getActivePageClass('work')">
+        <a class="nav-link waves-light" (click)="scrollToAnchor('work')" mdbWavesEffect>Work
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" (click)="scrollToAnchor('contact')" mdbWavesEffect>Contact</a>
+      <li [ngClass]="getActivePageClass('contact')">
+        <a class="nav-link waves-light" (click)="scrollToAnchor('contact')" mdbWavesEffect>Contact
+        </a>
       </li>
 
     </ul>

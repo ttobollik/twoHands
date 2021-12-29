@@ -8,6 +8,8 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 })
 export class HeaderComponent implements OnInit {
 
+  public currentPage = 'home';
+
   constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
@@ -15,6 +17,7 @@ export class HeaderComponent implements OnInit {
 
   scrollToAnchor(anchor: string) {
     const anchorEl = document.querySelector('#' + anchor);
+    this.currentPage = anchor;
 
     if (anchor !== null && anchorEl !== null) {
       anchorEl.scrollIntoView({
@@ -27,6 +30,12 @@ export class HeaderComponent implements OnInit {
     this.snackBar.open(message, 'Dismiss', {
       duration: 3000
     });
+  }
+  
+  getActivePageClass( page : string): string {
+    const test =  page === this.currentPage ? 'nav-item active' : 'nav-item'; 
+    console.log(test)
+    return test;
   }
 
 
